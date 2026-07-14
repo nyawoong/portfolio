@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "기업 홈페이지 리뉴얼",
+    "category": "corporate",
+    "categoryName": "Corporate",
+    "description": "기업 이미지 개선을 위한 반응형 홈페이지 리뉴얼",
+    "role": "UI Design · Publishing",
+    "tools": "Figma · Photoshop · HTML · CSS",
+    "image": "./assets/img/born-bed.jpg",
+    "link": "./projects/project01.html"
+  },
+  {
+    "id": 2,
+    "title": "쇼핑몰 기획전 디자인",
+    "category": "shopping",
+    "categoryName": "Shopping",
+    "description": "상품의 특징과 프로모션 내용을 강조한 기획전 페이지",
+    "role": "Visual Design · Retouch",
+    "tools": "Photoshop · Figma",
+    "image": "./assets/img/project02.jpg",
+    "link": "./projects/project02.html"
+  },
+  {
+    "id": 3,
+    "title": "이벤트 랜딩페이지",
+    "category": "event",
+    "categoryName": "Event",
+    "description": "사용자의 참여를 유도하는 이벤트 프로모션 페이지",
+    "role": "Design · Publishing",
+    "tools": "HTML · CSS · JavaScript",
+    "image": "./assets/img/project03.jpg",
+    "link": "./projects/project03.html"
+  },
+  {
+    "id": 4,
+    "title": "모바일 서비스 페이지",
+    "category": "mobile",
+    "categoryName": "Mobile",
+    "description": "모바일 사용성을 중심으로 구성한 반응형 서비스 화면",
+    "role": "UI Design · Responsive",
+    "tools": "Figma · HTML · CSS",
+    "image": "./assets/img/project04.jpg",
+    "link": "./projects/project04.html"
+  },
+  {
+    "id": 5,
+    "title": "금융 서비스 홈페이지",
+    "category": "corporate",
+    "categoryName": "Corporate",
+    "description": "신뢰감과 가독성을 고려한 금융 서비스 웹사이트",
+    "role": "Web Design · Publishing",
+    "tools": "Photoshop · HTML · CSS · jQuery",
+    "image": "./assets/img/project05.jpg",
+    "link": "./projects/project05.html"
+  },
+  {
+    "id": 6,
+    "title": "시즌 프로모션 페이지",
+    "category": "shopping",
+    "categoryName": "Shopping",
+    "description": "시즌 상품을 효과적으로 보여주는 쇼핑 프로모션",
+    "role": "Visual Design",
+    "tools": "Photoshop · Photography",
+    "image": "./assets/img/project06.jpg",
+    "link": "./projects/project06.html"
+  }
+]

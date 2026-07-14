@@ -169,9 +169,44 @@
         </div>
     </section>
 
-    <section id="portfolio" class="temporary-section">
-      <h2>Portfolio</h2>
-      <p>다음 단계에서 제작할 영역입니다.</p>
+    <section id="portfolio" class="portfolio section">
+        <div class="portfolio-header">
+            <div class="section-title">
+            <p class="section-label">PORTFOLIO</p>
+            <h2>대표 프로젝트</h2>
+            </div>
+
+            <p class="portfolio-description">
+            웹디자인, 퍼블리싱, 쇼핑몰 및 이벤트 페이지 작업을
+            분야별로 확인할 수 있습니다.
+            </p>
+        </div>
+
+        <div class="portfolio-filter" aria-label="포트폴리오 카테고리">
+            <button type="button" class="filter-button active" data-filter="all">
+            All
+            </button>
+
+            <button type="button" class="filter-button" data-filter="corporate">
+            Corporate
+            </button>
+
+            <button type="button" class="filter-button" data-filter="shopping">
+            Shopping
+            </button>
+
+            <button type="button" class="filter-button" data-filter="event">
+            Event
+            </button>
+
+            <button type="button" class="filter-button" data-filter="mobile">
+            Mobile
+            </button>
+        </div>
+
+        <div id="project-list" class="project-grid">
+            <p class="project-loading">프로젝트를 불러오는 중입니다.</p>
+        </div>
     </section>
 
     <section id="career" class="temporary-section">
