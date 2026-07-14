@@ -1,0 +1,312 @@
+:root {
+  --primary: #0057ff;
+  --text: #111827;
+  --muted: #667085;
+  --line: #e5e7eb;
+  --background: #ffffff;
+  --soft-background: #f5f8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Pretendard,
+    "Noto Sans KR",
+    Arial,
+    sans-serif;
+  color: var(--text);
+  background: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 헤더 */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.navigation {
+  display: flex;
+  gap: 34px;
+}
+
+.navigation a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navigation a:hover {
+  color: var(--primary);
+}
+
+.menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* 메인 첫 화면 */
+
+.hero {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  gap: 60px;
+  padding: 130px 6% 70px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      var(--soft-background) 100%
+    );
+}
+
+.hero-label {
+  margin: 0 0 18px;
+
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(46px, 6vw, 82px);
+  line-height: 1.04;
+  letter-spacing: -0.06em;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero-description {
+  max-width: 570px;
+  margin: 28px 0 0;
+
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.button {
+  min-height: 50px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 25px;
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  transition:
+    transform 0.2s,
+    background 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button.primary {
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.button.secondary {
+  background: #ffffff;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-card {
+  width: min(100%, 570px);
+  aspect-ratio: 4 / 3;
+
+  padding: 50px;
+
+  color: #ffffff;
+  background:
+    linear-gradient(
+      145deg,
+      #172033,
+      #070b13
+    );
+
+  border-radius: 32px;
+  box-shadow:
+    0 35px 90px rgba(15, 23, 42, 0.22);
+}
+
+.visual-card span {
+  color: #78a7ff;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.visual-card strong {
+  display: block;
+  margin-top: 38%;
+
+  font-size: clamp(30px, 4vw, 54px);
+  line-height: 1.12;
+}
+
+/* 임시 영역 */
+
+.temporary-section {
+  min-height: 400px;
+  padding: 100px 6%;
+  border-top: 1px solid var(--line);
+}
+
+.temporary-section h2 {
+  margin: 0 0 10px;
+  font-size: 42px;
+}
+
+.temporary-section p {
+  color: var(--muted);
+}
+
+/* 태블릿 */
+
+@media (max-width: 960px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    padding-top: 50px;
+  }
+
+  .hero-visual {
+    padding-bottom: 40px;
+  }
+}
+
+/* 모바일 */
+
+@media (max-width: 700px) {
+  .header {
+    height: 64px;
+    padding: 0 20px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+
+    position: absolute;
+    top: 64px;
+    left: 0;
+
+    width: 100%;
+    padding: 24px 20px;
+
+    flex-direction: column;
+    gap: 20px;
+
+    background: #ffffff;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .navigation.open {
+    display: flex;
+  }
+
+  .hero {
+    min-height: auto;
+    gap: 50px;
+    padding: 130px 20px 70px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .visual-card {
+    min-height: 330px;
+    padding: 32px;
+    border-radius: 22px;
+  }
+
+  .temporary-section {
+    padding: 80px 20px;
+  }
+}
