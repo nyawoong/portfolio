@@ -8,7 +8,19 @@
     "role": "UI Design · Publishing",
     "tools": "Figma · Photoshop · HTML · CSS",
     "image": "./assets/img/born-bed.jpg",
-    "link": "./projects/project01.html"
+    "link": "./projects/project.html?id=1",
+
+    "period": "2025.03 - 2025.05",
+    "contribution": "Design 100% · Publishing 100%",
+    "client": "기업명 또는 비공개",
+    "overview": "오래된 기업 홈페이지의 정보 구조와 시각적 완성도를 개선하고 PC와 모바일에서 동일한 사용 경험을 제공하도록 리뉴얼한 프로젝트입니다.",
+    "problem": "기존 홈페이지는 정보가 한 화면에 과도하게 몰려 있었고 모바일 화면에서 메뉴와 콘텐츠를 확인하기 어려웠습니다.",
+    "solution": "콘텐츠 우선순위를 다시 정리하고 주요 메뉴를 단순화했습니다. 반응형 레이아웃을 적용해 모바일에서도 내용을 쉽게 확인할 수 있도록 구성했습니다.",
+    "result": "가독성과 접근성이 개선되었으며 유지보수가 쉬운 HTML과 CSS 구조로 정리했습니다.",
+    "detailImages": [
+      "./assets/img/company-detail-01.jpg",
+      "./assets/img/company-detail-02.jpg"
+    ]
   },
   {
     "id": 2,
@@ -19,7 +31,7 @@
     "role": "Visual Design · Retouch",
     "tools": "Photoshop · Figma",
     "image": "./assets/img/project02.jpg",
-    "link": "./projects/project02.html"
+    "link": "./projects/project.html?id=2"
   },
   {
     "id": 3,
@@ -30,7 +42,7 @@
     "role": "Design · Publishing",
     "tools": "HTML · CSS · JavaScript",
     "image": "./assets/img/project03.jpg",
-    "link": "./projects/project03.html"
+    "link": "./projects/project.html?id=3"
   },
   {
     "id": 4,
@@ -41,7 +53,7 @@
     "role": "UI Design · Responsive",
     "tools": "Figma · HTML · CSS",
     "image": "./assets/img/project04.jpg",
-    "link": "./projects/project04.html"
+    "link": "./projects/project.html?id=4"
   },
   {
     "id": 5,
@@ -52,7 +64,7 @@
     "role": "Web Design · Publishing",
     "tools": "Photoshop · HTML · CSS · jQuery",
     "image": "./assets/img/born-bed.jpg",
-    "link": "./projects/project05.html"
+    "link": "./projects/project.html?id=5"
   },
   {
     "id": 6,
@@ -63,6 +75,6 @@
     "role": "Visual Design",
     "tools": "Photoshop · Photography",
     "image": "./assets/img/project06.jpg",
-    "link": "./projects/project06.html"
+    "link": "./projects/project.html?id=6"
   }
 ]
